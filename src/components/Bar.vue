@@ -1,7 +1,7 @@
 <template>
 <div>
  <h2>Bar  组件</h2>
-    <p>{{ 0 }}</p>
+    <p>{{ $store.state.count }}</p>
     <button> - </button>
 </div>
 </template>
