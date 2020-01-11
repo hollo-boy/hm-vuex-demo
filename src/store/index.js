@@ -22,12 +22,11 @@ export default new Vuex.Store({
   // 如何在组件中调用 mutation 函数？
   //       this.$store.commit('mutation函数名称'，可选参数)
   mutations: {
-    add (state) {
+    add (state, data = 1, data2) {
+      window.console.log(data)
+      // window.console.log(data)
       state.count++
+      // state.count += data
     }
-  },
-  actions: {
-  },
-  modules: {
   }
 })
